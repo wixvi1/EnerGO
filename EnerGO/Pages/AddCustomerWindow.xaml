@@ -1,0 +1,15 @@
+﻿<Window x:Class="EnerGO.Pages.AddCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnerGO.Pages"
+        mc:Ignorable="d"
+        Title="Add customer" MaxHeight="240" MaxWidth="300">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-100,0,0" Text="Customer"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,98,0,0" TextWrapping="Wrap" Text="Full name" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="108,98,0,0" TextWrapping="Wrap" x:Name="nameTextBox" VerticalAlignment="Top" Width="150"/>
+        <Button Content="Submit" x:Name="submitBtn" Click="submitBtn_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,120,0,0" Width="75"/>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="EnerGO.Pages.AddIndicatorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnerGO.Pages"
+        mc:Ignorable="d"
+        Title="Add Indicator" Height="300" Width="300">
+    <Grid>
+        <TextBlock Text="Indicator" HorizontalAlignment="Center" FontSize="17"/>
+        <TextBlock Text="Customer" Margin="15,35,0,0"/>
+        <TextBlock Text="Energy" Margin="15,70,0,0"/>
+        <TextBlock Text="Value" Margin="15,105,0,0"/>
+        <TextBlock Text="Date from" Margin="15,140,0,0"/>
+        <TextBlock Text="Date to" Margin="15,175,0,0"/>
+        
+        <ComboBox x:Name="customersCBox" Height="23" VerticalAlignment="Top" Margin="70,35,0,0" Width="170" Loaded="customersCBox_Loaded"/>
+        <ComboBox x:Name="energiesCBox" Height="23" VerticalAlignment="Top" Margin="70,70,0,0" Width="170" Loaded="energiesCBox_Loaded"/>
+        <TextBox x:Name="valueTextBox" Height="23" VerticalAlignment="Top" Margin="-40,105,0,0" Width="60"/>
+        <DatePicker x:Name="dateFrom" Height="23" VerticalAlignment="Top" Margin="70,140,0,0" Width="170"/>
+        <DatePicker x:Name="dateTo" Height="23" VerticalAlignment="Top" Margin="70,175,0,0" Width="170"/>
+
+        <Button x:Name="SubmitBtn" Content="Submit" Width="75" Height="25" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="SubmitBtn_Click"/>
+    </Grid>
+</Window>

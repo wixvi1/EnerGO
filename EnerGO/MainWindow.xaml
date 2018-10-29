@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EnerGO"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="EnerGO" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="Background" Value="wheat"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" Height="45" VerticalAlignment="Top" Background="#3a4c5f">
+            <Button x:Name="HomeButton" Click="HomeButton_Click" Content="Home" Margin="2,5,10,5" />
+            <Button x:Name="CustomersButton" Click="CustomersButton_Click" Content="Customers" Margin="10,5" />
+            <Button x:Name="SettingsButton" Click="SettingsButton_Click" Content="Settings" Margin="10,5"/>
+            <Button x:Name="ReadoutsButton" Click="ReadoutsButton_Click" Content="Readouts" Margin="10,5"/>
+        </StackPanel>
+        <Frame x:Name="MainFrame" Margin="0,45,0,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

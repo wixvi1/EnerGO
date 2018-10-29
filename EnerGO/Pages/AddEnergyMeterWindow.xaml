@@ -1,0 +1,20 @@
+﻿<Window x:Class="EnerGO.Pages.AddEnergyMeterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnerGO.Pages"
+        mc:Ignorable="d"
+        Title="Add Energy Meter" Height="230" Width="300">
+    <Grid>
+        <TextBlock Text="Energy meter" VerticalAlignment="Top" Margin="0,20,0,0" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBlock Text="Energy" Margin="30, 50,0,0"/>
+        <TextBlock Text="Measurment" Margin="30,85,0,0"/>
+
+        <TextBox x:Name="energyTextBox" Height="23" VerticalAlignment="Top" Margin="70,50,0,0" Width="150"/>
+        <TextBox x:Name="measurmentTextBox" Height="23" VerticalAlignment="Top" Margin="70,85,0,0" Width="150"/>
+
+        <Button x:Name="insertBtn" Click="insertBtn_Click" Height="30" Width="70" Content="Submit" VerticalAlignment="Bottom" Margin="0,0,0,30"/>
+
+    </Grid>
+</Window>
